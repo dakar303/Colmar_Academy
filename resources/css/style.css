@@ -1,9 +1,12 @@
 html {
   font-size: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 body {
-
+  display:block;
+  margin: 0;
 }
 
 header {
@@ -80,7 +83,7 @@ nav ul li {
   padding-top: 8px;
   padding-bottom: 8px;
   color: white;
-  width: 100%;
+  width: 85%;
   text-align: center;
   margin-top: 40px;
 }
@@ -92,12 +95,16 @@ nav ul li {
 
 .content .container {
   display: inline-flex;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-.content .column-left {
+ .column-left {
   width: 60%;
-  height: auto;
-  margin: 2rem 1.5rem;
+  #height: auto;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .column-left img {
@@ -105,30 +112,27 @@ nav ul li {
   height: auto;
 }
 
-.video-container {
-  height: auto;
-}
-
 .content .column-right {
-  width: 40%
+  width: 40%;
   height:auto;
-  margin-top: 1rem;
   border-left: 1px solid lightgray;
 }
 
 .feature {
   display: flex;
-  padding: 1rem 1rem;
+  padding-left: 1rem;
 }
 
 .feature-image {
   width: 35%;
+  #width: 148px;
   height: auto;
 }
 
 .feature img {
   width: 100%;
-  height:auto;
+  height: auto;
+  margin-top: 1rem;
 }
 
 .feature-text {
@@ -136,7 +140,8 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 1.5rem;
+  max-width: 243px;
+  margin-left: 1.5rem;
 }
 
  .title h1 {
@@ -186,6 +191,47 @@ padding:1rem 1em 2em 1em;
 
 .course-topics {
   font-size: .9em;
+}
+
+.thesis-left {
+ width: 75%;
+ padding-left: 1.5rem;
+ padding-right: 1rem;
+}
+
+.thesis-right {
+ width: 40%;
+ height:auto;
+}
+
+ .video-container {
+  width: 100%;
+  height: auto;
+}
+
+.thesis {
+  display: flex;
+  #padding-left: 1rem;
+}
+
+.thesis-image {
+  width: 35%;
+  height: auto;
+}
+
+.thesis img {
+  width: 100%;
+  height: auto;
+  #margin-top: 1rem;
+}
+
+.thesis-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 243px;
+  margin-left: 1.5rem;
 }
 
 footer {
