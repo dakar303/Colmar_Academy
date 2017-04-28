@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   max-width: 1280px;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -27,14 +28,19 @@ nav div {
 }
 
 nav img {
-  height: 2rem;
+  height: 3.125rem;
   margin-left: 1.5rem;
-
 }
 
 nav ul li {
   display: inline;
-  padding: 1rem 0;
+  padding: 0rem 0.5rem;
+  font-size: 1.125rem;
+}
+
+nav span {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 .mobile-menu {
@@ -70,22 +76,30 @@ nav ul li {
 }
 
 .banner-content h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+  padding-bottom: 0.5rem;
+  margin-right: 25%;
 }
 
 .banner-content h2 {
-  font-size: 1.2rem;
+  line-height: 2.5rem;
+  font-size: 1.75rem;
   margin-top: 20px;
+  color: #444;
+  margin-right: 25%;
 }
 
 .banner .button {
-  background-color: gray;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  background-color: #444;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   color: white;
-  width: 85%;
+  width: 80%;
   text-align: center;
   margin-top: 40px;
+  font-size: 1.25rem;
 }
 
 .content {
@@ -112,6 +126,31 @@ nav ul li {
   height: auto;
 }
 
+.column-left h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  line-height: 1.7em;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #444;
+}
+
+.column-left h5 {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight:400;
+  line-height: 1.7em;
+  padding-bottom: 2rem;
+}
+
+.column-left p {
+  font-size: 1.275rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.7em;
+  padding-bottom: 2.5rem;
+}
+
 .content .column-right {
   width: 40%;
   height:auto;
@@ -124,7 +163,7 @@ nav ul li {
 }
 
 .feature-image {
-  width: 35%;
+  width: 40%;
   #width: 148px;
   height: auto;
 }
@@ -140,12 +179,37 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 243px;
+  max-width: 250px;
   margin-left: 1.5rem;
+}
+
+.feature-text h1 {
+  font-size: 1.5rem;
+  color:#444;
+  font-weight: 700;
+  padding-bottom: .5em;
+  line-height: 1.5em;
+}
+
+.feature-text p {
+  font-size: 1.0rem;
+  font-weight: normal;
+  color:#444;
+  padding-bottom: 1rem;
+  line-height: 1.5em;
+}
+
+.feature-text a {
+  text-decoration: none !important;
+  font-size: 1rem;
+  color: dodgerblue;
 }
 
  .title h1 {
   text-align: center;
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #444;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -170,7 +234,9 @@ nav ul li {
 display:flex;
 flex-direction: column;
 width: 30%;
+height:auto;
 margin: 1em;
+flex-shrink: 2;
 }
 
 .tile img{
@@ -180,23 +246,59 @@ margin: 1em;
 
 .tile-text{
 display:block;
-height: 3.5rem;
+height: 9.0rem;
 background-color: white;
 padding:1rem 1em 2em 1em;
 }
 
+.tile-text h4 {
+  font-size:1.70rem;
+  letter-spacing: .5px;
+  text-align: left;
+  font-weight: 700;
+  color:#444;
+  padding-top: 1rem;
+  padding-bottom:.25em;
+}
+
 .tile-title {
-  padding: .5em 0 .5em 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: .25rem 0 .5rem 0;
+  color: #808285;
 }
 
 .course-topics {
-  font-size: .9em;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: .5px;
+  line-height: 1.75rem;
+  color: #808285;
+  margin-right: 5%;
 }
 
 .thesis-left {
  width: 75%;
  padding-left: 1.5rem;
  padding-right: 1rem;
+}
+
+.thesis-left h2 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: 1.7em;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #444;
+}
+
+.thesis-left h5 {
+  font-size: 1.2rem;
+  color: #808285;
+  font-weight:400;
+  line-height: 1.7em;
+  padding-bottom: 2rem;
+  margin-right: 5%;
 }
 
 .thesis-right {
@@ -234,6 +336,22 @@ padding:1rem 1em 2em 1em;
   margin-left: 1.5rem;
 }
 
+.thesis-text h1 {
+  font-size: 1.5rem;
+  color:#444;
+  font-weight: 700;
+  padding-bottom: .5em;
+  line-height: 1.5em;
+}
+
+.thesis-text p {
+  font-size: 1.0rem;
+  font-weight: normal;
+  color:#808285;
+  padding-bottom: 1rem;
+  line-height: 1.5em;
+}
+
 footer {
   display:flex;
   align-items: center;
@@ -241,10 +359,12 @@ footer {
   border-top: 1px solid lightgray;
   padding-top: 1rem;
   padding-left: 1.5rem;
+  color: #808285;
 }
 
 footer ul li {
   display: inline;
   padding: 1rem 0;
   padding-right: 1.5rem;
+  color: #808285;
 }
