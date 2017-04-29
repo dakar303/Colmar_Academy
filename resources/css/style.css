@@ -2,7 +2,7 @@ html {
   font-size: 16px;
   max-width: 1280px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", "Roboto", sans-serif;
 }
 
 body {
@@ -42,9 +42,37 @@ nav span {
   font-size: 1.25rem;
   line-height: 1.6;
 }
+@media only screen and (min-width: 481px) {
+ .mobile-menu {
+   display: none;
+  }
+}
 
-.mobile-menu {
-  display: none;
+@media only screen and (max-width: 480px) {
+
+  nav span {
+    display: none;
+  }
+
+  .desklogo {
+     display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .mobile-menu img {
+    margin-left: 0;
+    padding: 0 40px;
+    height: 2.75rem;
+  }
+
 }
 
 .banner {
@@ -100,6 +128,58 @@ nav span {
   text-align: center;
   margin-top: 40px;
   font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner .container {
+    flex-direction: column;
+  }
+
+  .banner .image-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .banner img {
+    width: 100%;
+    height:auto;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-right: 20%;
+    letter-spacing: .5px;
+  }
+
+  .banner-content h2 {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.75rem;
+    margin-right: 15%;
+  }
+
+  .banner .button {
+    background-color: gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 92%;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
 }
 
 .content {
@@ -205,6 +285,59 @@ nav span {
   color: dodgerblue;
 }
 
+@media only screen and (min-width: 481px) {
+ .feature-image-mobile {
+   display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .column-left {
+    display: none;
+  }
+
+  .content .column-right {
+    width: 100%;
+    height:auto;
+    border-left: none;
+  }
+
+  .feature {
+    display: block;
+  }
+
+  .feature-image {
+    display: none;
+  }
+
+  .feature-image-mobile {
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .feature-text {
+    margin-left: 1rem;
+    max-width: 300px;
+  }
+
+  .feature-text h1 {
+    letter-spacing: .5px;
+    padding-bottom: 1rem;
+    line-height: 1em;
+  }
+
+  .feature-text p {
+    letter-spacing: .5px;
+    padding-bottom: 1rem;
+    line-height: 1em;
+  }
+
+  .feature-text a {
+    padding-bottom: 1rem;
+  }
+
+}
+
  .title h1 {
   text-align: center;
   font-size: 2.75rem;
@@ -276,6 +409,62 @@ padding:1rem 1em 2em 1em;
   color: #808285;
   margin-right: 5%;
 }
+
+@media only screen and (max-width: 480px) {
+  .title h1 {
+    padding-top: 2rem;
+  }
+
+  .courses {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+  }
+
+  .course-mosaic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .tile {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 0.5rem;
+  }
+
+  .tile img{
+    display: none;
+  }
+
+  .tile-text{
+  display:block;
+  height: auto;
+  background-color: lightgray;
+  letter-spacing: 0.5px
+  }
+
+  .tile-text h4 {
+    letter-spacing: .5px;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom:.25em;
+  }
+
+  .tile-title {
+    display: none;
+  }
+
+  .course-topics {
+    display: none;
+  }
+}
+
 
 .thesis-left {
  width: 75%;
@@ -352,6 +541,27 @@ padding:1rem 1em 2em 1em;
   line-height: 1.5em;
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis-right {
+    display: none;
+  }
+
+  .thesis-left {
+   width: 100%;
+   padding-left: 0;
+   padding-right: 0;
+  }
+
+  .thesis-left h2 {
+    display: none;
+  }
+
+  .thesis-left h5 {
+    display: none;
+  }
+
+}
+
 footer {
   display:flex;
   align-items: center;
@@ -367,4 +577,17 @@ footer ul li {
   padding: 1rem 0;
   padding-right: 1.5rem;
   color: #808285;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    border-top: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  footer ul li {
+    display: none;
+  }
 }
