@@ -105,7 +105,7 @@ nav span {
 
 .banner-content h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 900;
   color: #444;
   padding-bottom: 0.5rem;
   margin-right: 25%;
@@ -121,8 +121,8 @@ nav span {
 
 .banner .button {
   background-color: #444;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: white;
   width: 80%;
   text-align: center;
@@ -193,7 +193,7 @@ nav span {
   padding-bottom: 2rem;
 }
 
- .column-left {
+.column-left {
   width: 60%;
   #height: auto;
   padding-top: 1rem;
@@ -208,7 +208,7 @@ nav span {
 
 .column-left h1 {
   font-size: 2.75rem;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1.7em;
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -242,6 +242,10 @@ nav span {
   padding-left: 1rem;
 }
 
+.feature:hover{
+  background-color: lightgray;
+}
+
 .feature-image {
   width: 40%;
   #width: 148px;
@@ -252,6 +256,7 @@ nav span {
   width: 100%;
   height: auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .feature-text {
@@ -273,7 +278,7 @@ nav span {
 
 .feature-text p {
   font-size: 1.0rem;
-  font-weight: normal;
+  font-weight: 300;
   color:#444;
   padding-bottom: 1rem;
   line-height: 1.5em;
@@ -304,6 +309,10 @@ nav span {
 
   .feature {
     display: block;
+  }
+
+  .feature:hover{
+    background-color: white;
   }
 
   .feature-image {
@@ -338,10 +347,10 @@ nav span {
 
 }
 
- .title h1 {
+.title h1 {
   text-align: center;
   font-size: 2.75rem;
-  font-weight: bold;
+  font-weight: 900;
   color: #444;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -364,24 +373,26 @@ nav span {
 }
 
 .tile{
-display:flex;
-flex-direction: column;
-width: 30%;
-height:auto;
-margin: 1em;
-flex-shrink: 2;
+  display:flex;
+  flex-direction: column;
+  width: 30%;
+  height:auto;
+  margin: 1em;
+  flex-shrink: 2;
 }
 
 .tile img{
-  height: 13.75rem;
+  max-height: 13.75rem;
+  flex-shrink: 2;
   width: auto;
 }
 
 .tile-text{
-display:block;
-height: 9.0rem;
-background-color: white;
-padding:1rem 1em 2em 1em;
+  display:flex;
+  flex-direction: column;
+  height: 9.0rem;
+  background-color: white;
+  padding:1rem 1rem 2rem 1rem;
 }
 
 .tile-text h4 {
@@ -410,7 +421,39 @@ padding:1rem 1em 2em 1em;
   margin-right: 5%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 791px) and (max-width: 1155px) {
+  .tile{
+    padding-bottom: 1rem;
+  }
+
+  .course-mosaic {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .tile-text{
+    display:flex;
+    flex-direction: column;
+    padding: 0 1rem 2.5rem 1rem;
+  }
+
+  .tile-text h4 {
+    font-size:1.35rem;
+  }
+
+  .tile-title {
+    font-size: 1rem;
+  }
+
+  .course-topics {
+    font-size: 1rem;
+    margin-bottom: 1.5rem
+  }
+}
+
+@media only screen and (max-width: 790px) {
   .title h1 {
     padding-top: 2rem;
   }
@@ -446,7 +489,8 @@ padding:1rem 1em 2em 1em;
   display:block;
   height: auto;
   background-color: lightgray;
-  letter-spacing: 0.5px
+  letter-spacing: 0.5px;
+  padding: 1rem 1em 2em 1em;
   }
 
   .tile-text h4 {
@@ -464,7 +508,6 @@ padding:1rem 1em 2em 1em;
     display: none;
   }
 }
-
 
 .thesis-left {
  width: 75%;
@@ -503,6 +546,10 @@ padding:1rem 1em 2em 1em;
 .thesis {
   display: flex;
   #padding-left: 1rem;
+}
+
+.thesis:hover{
+  background-color: lightgray;
 }
 
 .thesis-image {
